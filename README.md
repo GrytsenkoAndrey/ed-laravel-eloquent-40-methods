@@ -1,0 +1,1 @@
+# ed-laravel-eloquent-40-methods
