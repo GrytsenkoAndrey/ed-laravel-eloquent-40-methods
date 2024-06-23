@@ -2,9 +2,9 @@
 
 ## 1. tap()
 
-Why: To apply changes to a model and return the model itself for method chaining.
+**Why**: To apply changes to a model and return the model itself for method chaining.
 
-When: Use it when you want to modify an object and immediately use it in another operation.
+**When**: Use it when you want to modify an object and immediately use it in another operation.
 
 ```
 User::find(1)->tap(function ($user) {
@@ -14,9 +14,9 @@ User::find(1)->tap(function ($user) {
 
 ## 2. firstOrFail()
 
-Why: To ensure you get a valid result or handle the case where no result is found.
+**Why**: To ensure you get a valid result or handle the case where no result is found.
 
-When: Use it when you need to fetch a specific record and want to throw an error if it doesn’t exist.
+**When**: Use it when you need to fetch a specific record and want to throw an error if it doesn’t exist.
 
 ```
 $user = User::where('email', 'example@example.com')->firstOrFail();
